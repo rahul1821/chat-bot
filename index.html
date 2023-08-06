@@ -1,0 +1,22 @@
+<script>
+    let name;
+    var text = document.querySelector('#textarea');
+    var message_area = document.querySelector('.message_area');
+
+    do{
+        name = prompt("enter your name first");
+    }
+    while(!name)
+
+
+    text.addEventListene('keyup', (e)=>{
+        if(e.key === "Enter"){
+            sendMessage(e.target.value);
+        }
+    })
+    // create the sendMessage functionallity
+    function sendMessage(msg){
+        
+    }
+
+</script>
